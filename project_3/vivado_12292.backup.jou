@@ -1,0 +1,369 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Sep  9 11:38:26 2018
+# Process ID: 12292
+# Current directory: C:/Users/11918/OneDrive/FPGA/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17900 C:\Users\11918\OneDrive\FPGA\project_3\project_3.xpr
+# Log file: C:/Users/11918/OneDrive/FPGA/project_3/vivado.log
+# Journal file: C:/Users/11918/OneDrive/FPGA/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11918/OneDrive/FPGA/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_1 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_1} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_1.coe}] [get_ips pic_1]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci]
+catch { config_ip_cache -export [get_ips -all pic_1] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci]
+launch_runs -jobs 8 pic_1_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_2 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_2} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_2.coe}] [get_ips pic_2]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci]
+catch { config_ip_cache -export [get_ips -all pic_2] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci]
+launch_runs -jobs 8 pic_2_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_3 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_3} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_3.coe}] [get_ips pic_3]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci]
+catch { config_ip_cache -export [get_ips -all pic_3] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci]
+launch_runs -jobs 8 pic_3_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_4 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_4} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_4.coe}] [get_ips pic_4]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci]
+catch { config_ip_cache -export [get_ips -all pic_4] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci]
+launch_runs -jobs 8 pic_4_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_5 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_5} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_5.coe}] [get_ips pic_5]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci]
+catch { config_ip_cache -export [get_ips -all pic_5] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci]
+launch_runs -jobs 8 pic_5_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_6 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_6} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_6.coe}] [get_ips pic_6]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci]
+catch { config_ip_cache -export [get_ips -all pic_6] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci]
+launch_runs -jobs 8 pic_6_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_7 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_7} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_7.coe}] [get_ips pic_7]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci]
+catch { config_ip_cache -export [get_ips -all pic_7] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci]
+launch_runs -jobs 8 pic_7_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_8 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_8} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_8.coe}] [get_ips pic_8]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci]
+catch { config_ip_cache -export [get_ips -all pic_8] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci]
+launch_runs -jobs 8 pic_8_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_9 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_9} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_9.coe}] [get_ips pic_9]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci]
+catch { config_ip_cache -export [get_ips -all pic_9] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci]
+launch_runs -jobs 8 pic_9_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_10 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_10} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_10.coe}] [get_ips pic_10]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci]
+catch { config_ip_cache -export [get_ips -all pic_10] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci]
+launch_runs -jobs 8 pic_10_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_11 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_11} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_11.coe}] [get_ips pic_11]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci]
+catch { config_ip_cache -export [get_ips -all pic_11] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci]
+launch_runs -jobs 8 pic_11_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_12 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_12} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_12.coe}] [get_ips pic_12]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci]
+catch { config_ip_cache -export [get_ips -all pic_12] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci]
+launch_runs -jobs 8 pic_12_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_13 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_13} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_13.coe}] [get_ips pic_13]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci]
+catch { config_ip_cache -export [get_ips -all pic_13] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci]
+launch_runs -jobs 8 pic_13_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_14 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_14} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_14.coe}] [get_ips pic_14]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci]
+catch { config_ip_cache -export [get_ips -all pic_14] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci]
+launch_runs -jobs 8 pic_14_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_15.coe}] [get_ips blk_mem_gen_0]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/11918/Desktop/coe/pic_15.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/11918/Desktop/coe/pic_15.coe
+export_ip_user_files -of_objects  [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+file delete -force c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_15 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_15} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_15.coe}] [get_ips pic_15]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci]
+catch { config_ip_cache -export [get_ips -all pic_15] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci]
+launch_runs -jobs 8 pic_15_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_16.coe}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 8 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/11918/Desktop/coe/pic_16.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/11918/Desktop/coe/pic_16.coe
+export_ip_user_files -of_objects  [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+file delete -force c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic_16 -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic_16} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {6400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/Desktop/coe/pic_16.coe}] [get_ips pic_16]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci]
+catch { config_ip_cache -export [get_ips -all pic_16] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci]
+launch_runs -jobs 8 pic_16_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_1]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci]
+catch { config_ip_cache -export [get_ips -all pic_1] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci] -no_script -sync -force -quiet
+reset_run pic_1_synth_1
+launch_runs -jobs 8 pic_1_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_2]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci]
+catch { config_ip_cache -export [get_ips -all pic_2] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci] -no_script -sync -force -quiet
+reset_run pic_2_synth_1
+launch_runs -jobs 8 pic_2_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_project
+open_project C:/Users/11918/OneDrive/FPGA/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips drink_1]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_1/project_1.srcs/sources_1/ip/drink_1/drink_1.xci]
+catch { config_ip_cache -export [get_ips -all drink_1] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_1/project_1.srcs/sources_1/ip/drink_1/drink_1.xci] -no_script -sync -force -quiet
+reset_run drink_1_synth_1
+launch_runs -jobs 8 drink_1_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_1/project_1.srcs/sources_1/ip/drink_1/drink_1.xci] -directory C:/Users/11918/OneDrive/FPGA/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_project
+open_project C:/Users/11918/OneDrive/FPGA/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_10]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci]
+catch { config_ip_cache -export [get_ips -all pic_10] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci] -no_script -sync -force -quiet
+reset_run pic_10_synth_1
+launch_runs -jobs 8 pic_10_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_11]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci]
+catch { config_ip_cache -export [get_ips -all pic_11] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci] -no_script -sync -force -quiet
+reset_run pic_11_synth_1
+launch_runs -jobs 8 pic_11_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_9]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci]
+catch { config_ip_cache -export [get_ips -all pic_9] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci] -no_script -sync -force -quiet
+reset_run pic_9_synth_1
+launch_runs -jobs 8 pic_9_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_8]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci]
+catch { config_ip_cache -export [get_ips -all pic_8] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -no_script -sync -force -quiet
+reset_run pic_8_synth_1
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci]
+catch { config_ip_cache -export [get_ips -all pic_8] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -no_script -sync -force -quiet
+launch_runs -jobs 8 pic_8_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_7]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci]
+catch { config_ip_cache -export [get_ips -all pic_7] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci] -no_script -sync -force -quiet
+reset_run pic_7_synth_1
+launch_runs -jobs 8 pic_7_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_6]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci]
+catch { config_ip_cache -export [get_ips -all pic_6] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci] -no_script -sync -force -quiet
+reset_run pic_6_synth_1
+launch_runs -jobs 8 pic_6_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips pic_5]
+generate_target all [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci]
+catch { config_ip_cache -export [get_ips -all pic_5] }
+export_ip_user_files -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci] -no_script -sync -force -quiet
+reset_run pic_5_synth_1
+launch_runs -jobs 8 pic_5_synth_1
+export_simulation -of_objects [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_10 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10/pic_10.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_10
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_11 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11/pic_11.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_11
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_12 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12/pic_12.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_12
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_2 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2/pic_2.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_2
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_5 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5/pic_5.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_5
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_6 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6/pic_6.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_6
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_7 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7/pic_7.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_7
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_8 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8/pic_8.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_8
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_13 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13/pic_13.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_13
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_14 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14/pic_14.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_14
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_15 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15/pic_15.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_15
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_16 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16/pic_16.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_16
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_3 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3/pic_3.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_3
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_4 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4/pic_4.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_4
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_9 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9/pic_9.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_9
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset pic_1 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1/pic_1.xci
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name pic -dir c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {pic} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {3} CONFIG.Write_Depth_A {102400} CONFIG.Read_Width_A {3} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {3} CONFIG.Read_Width_B {3} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/11918/OneDrive/FPGA/project_3/zong.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips pic]
+generate_target {instantiation_template} [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/pic.xci]
+generate_target all [get_files  c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/pic.xci]
+catch { config_ip_cache -export [get_ips -all pic] }
+export_ip_user_files -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/pic.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/pic.xci]
+launch_runs -jobs 8 pic_synth_1
+export_simulation -of_objects [get_files c:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/pic.xci] -directory C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files -ipstatic_source_dir C:/Users/11918/OneDrive/FPGA/project_3/project_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/11918/OneDrive/FPGA/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

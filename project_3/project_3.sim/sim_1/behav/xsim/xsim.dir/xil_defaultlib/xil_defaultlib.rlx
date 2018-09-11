@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v,1536636340,verilog,,,,testbench,,,,,,,,
+C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v,1536475902,verilog,,C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v,,pic,,,,,,,,
+C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v,1536638754,verilog,,C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v,,boma_delay;fenpin;key_delay;main;sync_module;top;vga_control_module,,,,,,,,

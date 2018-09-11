@@ -1,0 +1,908 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 10 21:59:04 2018
+# Process ID: 1360
+# Current directory: C:/Users/11918/OneDrive/FPGA/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3348 C:\Users\11918\OneDrive\FPGA\project_3\project_3.xpr
+# Log file: C:/Users/11918/OneDrive/FPGA/project_3/vivado.log
+# Journal file: C:/Users/11918/OneDrive/FPGA/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11918/OneDrive/FPGA/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 765.855 ; gain = 48.105
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:00:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:01:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 22:02:51 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:04:41 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:05:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:06:53 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:07:54 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 22:09:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:12:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:14:08 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 22:16:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1063]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1067]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1074]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1081]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1088]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1095]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1102]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1109]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1115]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1121]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1127]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1133]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1139]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1145]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1151]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1157]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1163]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1167]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1172]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1176]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1177]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1179]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1181]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1185]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1186]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1188]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1190]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1194]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1197]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1202]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1206]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1216]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1226]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1234]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1242]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1248]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1253]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1256]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1265]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1274]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1277]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1279]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1281]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1283]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1285]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1290]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1292]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1296]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1299]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1307]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1309]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1314]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1317]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1335]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1339]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1345]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1348]
+[Mon Sep 10 22:30:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:33:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:34:05 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:36:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 22:38:12 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 22:45:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 22:48:14 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 22:49:58 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 23:11:15 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 23:23:59 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 23:26:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 23:28:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 top.bit" xxx.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 top.bit} xxx.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile top.bit
+ERROR: [Bitstream 40-47] File top.bit does not exist.
+ERROR: [Bitstream 40-46] File top.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile top.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 top.bit" top.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 top.bit} top.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile top.bit
+ERROR: [Bitstream 40-47] File top.bit does not exist.
+ERROR: [Bitstream 40-46] File top.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile top.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit" top.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit} top.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit
+ERROR: [Bitstream 40-47] File C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit does not exist.
+ERROR: [Bitstream 40-46] File C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit cannot be opened for input.
+ERROR: [Writecfgmem 68-7] Could not load bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1top.bit.
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit" top.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} top.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+Writing file ./top.mcs
+Writing log file ./top.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Sep 10 23:28:55 2018    C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit" top.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} top.mcs
+Creating config memory files...
+ERROR: [Writecfgmem 68-5] Cannot overwrite file ./top.prm. Use "-force" flag.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit" top9.mcs
+Command: write_cfgmem -format MCS -size 128 -interface BPIx16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} top9.mcs
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+Writing file ./top9.mcs
+Writing log file ./top9.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Sep 10 23:28:55 2018    C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+set_property PROGRAM.FILES "C:/Users/11918/OneDrive/FPGA/project_3/top9.mcs" [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a100t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/11918/OneDrive/FPGA/project_3/top9.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a100t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 1716.637 ; gain = 0.000
+endgroup
+write_cfgmem -format mcs -interface spix4 -size 16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit" -file FPGA_TOP.mcs
+Command: write_cfgmem -format mcs -interface spix4 -size 16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} -file FPGA_TOP.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+WARNING: [Vivado 12-628] No current design set.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+write_cfgmem -format mcs -interface spix4 -size 16 -loadbit "up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit" -file FPGA_TOP.mcs
+Command: write_cfgmem -format mcs -interface spix4 -size 16 -loadbit {up 0x0 C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} -file FPGA_TOP.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+WARNING: [Vivado 12-628] No current design set.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Sep 11 00:27:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-up} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a100t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:28 . Memory (MB): peak = 1751.816 ; gain = 0.000
+endgroup
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROGRAM.ADDRESS_RANGE  {entire_device} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-up} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a100t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+INFO: [Xicom 50-104] The verify operation will only be performed on the address range specified by the Memory Configuration File (MCS).
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:46 . Memory (MB): peak = 1751.816 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Sep 11 09:07:15 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Sep 11 09:09:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Sep 11 09:11:15 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+close_hw
+move_files -fileset sim_1 [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v]
+move_files [get_files  C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v
+file delete -force C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Common 17-14] Message 'Common 17-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 11 09:57:57 2018...

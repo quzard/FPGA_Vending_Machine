@@ -1,0 +1,1082 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 10 13:30:13 2018
+# Process ID: 10088
+# Current directory: C:/Users/11918/OneDrive/FPGA/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6692 C:\Users\11918\OneDrive\FPGA\project_3\project_3.xpr
+# Log file: C:/Users/11918/OneDrive/FPGA/project_3/vivado.log
+# Journal file: C:/Users/11918/OneDrive/FPGA/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11918/OneDrive/FPGA/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 770.961 ; gain = 64.457
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 13:41:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 13:43:10 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 13:45:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 13:52:06 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 13:53:45 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 13:55:39 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 14:16:54 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 14:17:46 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:19:16 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:6]
+[Mon Sep 10 14:24:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 14:28:17 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 14:29:10 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:30:45 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE C:/Users/11918/OneDrive/FPGA/x.tcl [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:32:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FF9AA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 14:34:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 14:35:27 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:37:18 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 14:39:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 14:40:22 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:41:52 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:140]
+[Mon Sep 10 14:54:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 14:55:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 14:56:54 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 14:58:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 10 14:58:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 15:09:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 15:11:49 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 15:13:34 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1294]
+[Mon Sep 10 15:21:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 15:21:59 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 15:24:06 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 15:27:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1294]
+[Mon Sep 10 15:37:03 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 15:38:24 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 15:40:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 15:41:58 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 15:53:45 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 15:55:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 15:58:08 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 16:09:49 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 16:11:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 16:13:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 16:18:57 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 16:20:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 16:22:37 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 16:26:15 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 16:29:03 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 16:41:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 16:43:45 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 16:45:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 16:50:20 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 16:52:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 16:53:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:01:43 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:02:50 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:04:17 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:05:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:07:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:08:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/key.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:20:01 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:22:34 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:23:38 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:26:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:28:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:30:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:37:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 10 17:37:12 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:40:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1487.285 ; gain = 0.188
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:47:14 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:48:53 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:50:43 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 17:55:53 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 17:58:13 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 17:59:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 18:07:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 18:10:46 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 18:12:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 18:21:34 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 18:23:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 18:26:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "default". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:854]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:855]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:880]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "endmodule". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1263]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "input". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1271]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "fenpin". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1290]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "key_delay". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1295]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "boma_delay". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1301]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "sync_module". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1307]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "vga_control_module". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1317]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "main". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1327]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "endmodule". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1337]
+[Mon Sep 10 18:46:18 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 18:47:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 18:49:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 18:51:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 18:54:10 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 18:54:16 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 18:56:41 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 18:59:50 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:04:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 19:07:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 19:09:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:12:22 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 19:14:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 19:16:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:21:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:21:42 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 19:23:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 19:25:51 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:34:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:38:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 19:40:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 19:42:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:46:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 19:48:59 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 19:50:50 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:55:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 19:58:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:00:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:02:24 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 20:05:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:07:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:10:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 20:11:51 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:13:51 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:15:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 20:19:18 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:21:57 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:26:48 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 20:29:52 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:32:47 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:34:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "and". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1203]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1207]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1212]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1221]
+[Mon Sep 10 20:49:24 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 20:53:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 20:55:59 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 20:57:50 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:05:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 21:07:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 21:09:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1630.031 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:11:10 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 21:14:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:18:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:20:07 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 21:24:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 21:26:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:30:04 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:30:10 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:30:40 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:31:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:32:27 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:32:43 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 10 21:32:58 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 10 21:32:58 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:42:29 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:43:59 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Sep 10 21:46:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 21:47:16 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 10 21:47:16 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Sep 10 21:54:23 2018] Launched synth_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 10 21:54:23 2018] Launched impl_1...
+Run output will be captured here: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 10 21:58:38 2018...

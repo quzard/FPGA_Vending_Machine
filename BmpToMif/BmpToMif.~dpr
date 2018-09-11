@@ -1,0 +1,14 @@
+program BmpToMif;
+
+uses
+  Forms,
+  Main in 'Main.pas' {FormMain},
+  Lib in 'Lib.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormMain, FormMain);
+  Application.Run;
+end.

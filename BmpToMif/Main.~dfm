@@ -1,0 +1,356 @@
+object FormMain: TFormMain
+  Left = 262
+  Top = 116
+  Width = 544
+  Height = 558
+  Caption = 'Bmp2Mif'
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 12
+  object RzPageControl: TRzPageControl
+    Left = 8
+    Top = 8
+    Width = 504
+    Height = 515
+    ActivePage = TabSheetBmp
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+    TabHeight = 30
+    TabIndex = 0
+    TabOrder = 0
+    FixedDimension = 30
+    object TabSheetBmp: TRzTabSheet
+      Caption = 'Bmp2Mif'
+      DesignSize = (
+        500
+        481)
+      object ButtonLoad: TButton
+        Left = 16
+        Top = 16
+        Width = 121
+        Height = 35
+        Caption = #25171#24320#22270#29255
+        TabOrder = 0
+        OnClick = ButtonLoadClick
+      end
+      object ButtonMake: TButton
+        Left = 16
+        Top = 57
+        Width = 121
+        Height = 32
+        Caption = #29983#25104'Mif'#25991#20214
+        TabOrder = 1
+        OnClick = ButtonMakeClick
+      end
+      object ScrollBoxPic: TScrollBox
+        Left = 143
+        Top = 16
+        Width = 346
+        Height = 353
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        TabOrder = 2
+        object ImagePic: TImage
+          Left = 0
+          Top = 0
+          Width = 100
+          Height = 100
+          AutoSize = True
+        end
+      end
+      object GroupBoxType: TGroupBox
+        Left = 16
+        Top = 104
+        Width = 113
+        Height = 73
+        Caption = #39068#33394#31867#22411
+        TabOrder = 3
+        object RadioButtonTypeBlack: TRadioButton
+          Left = 8
+          Top = 21
+          Width = 89
+          Height = 17
+          Caption = #40657#30333
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+          OnClick = RadioButtonTypeBlackClick
+        end
+        object RadioButtonTypeColor: TRadioButton
+          Left = 8
+          Top = 40
+          Width = 89
+          Height = 17
+          Caption = #24425#33394
+          TabOrder = 1
+          OnClick = RadioButtonTypeColorClick
+        end
+      end
+      object GroupBoxBlack: TGroupBox
+        Left = 16
+        Top = 183
+        Width = 113
+        Height = 90
+        Caption = #40657#30333#23646#24615
+        TabOrder = 4
+        object LabelBlack: TLabel
+          Left = 8
+          Top = 24
+          Width = 48
+          Height = 12
+          Caption = #26377#25928#39068#33394
+        end
+        object RadioButtonBlack: TRadioButton
+          Left = 18
+          Top = 42
+          Width = 79
+          Height = 17
+          Caption = #40657#33394
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButtonWhite: TRadioButton
+          Left = 18
+          Top = 60
+          Width = 79
+          Height = 17
+          Caption = #30333#33394
+          TabOrder = 1
+        end
+      end
+      object GroupBoxColor: TGroupBox
+        Left = 16
+        Top = 279
+        Width = 113
+        Height = 90
+        Caption = #24425#33394#23646#24615
+        TabOrder = 5
+        Visible = False
+        object LabelColor: TLabel
+          Left = 8
+          Top = 24
+          Width = 48
+          Height = 12
+          Caption = #29983#25104#26684#24335
+        end
+        object RadioButtonColorSingle: TRadioButton
+          Left = 18
+          Top = 42
+          Width = 92
+          Height = 17
+          Hint = #22312#19968#20010'mif'#25991#20214#20013#23384#20648#24425#33394#20301#22270#30340'RGB'#19977#33394#20449#24687', '#21487#29992#20110#21021#22987#21270#20301#23485#20026'3'#30340'ROM'#25110'RAM, '#23384#20648#39034#24207#20026'R,G,B'
+          Caption = #21333#19968'mif'#25991#20214
+          Checked = True
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButtonColorMultiple: TRadioButton
+          Left = 18
+          Top = 60
+          Width = 92
+          Height = 17
+          Hint = #22312#19977#20010'mif'#25991#20214#20013#20998#21035#23384#20648#24425#33394#20301#22270#30340'RGB'#19977#33394#20449#24687', '#21487#29992#20110#21021#22987#21270#19977#20010#20301#23485#20026'1'#30340'ROM'#25110'RAM'
+          Caption = #19977#20010'mif'#25991#20214
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 1
+        end
+      end
+      object GroupBoxBoundary: TGroupBox
+        Left = 16
+        Top = 376
+        Width = 473
+        Height = 89
+        Caption = #39068#33394#30028#20540
+        TabOrder = 6
+        object LabelRed: TLabel
+          Left = 76
+          Top = 31
+          Width = 24
+          Height = 12
+          Caption = #32418#33394
+        end
+        object LabelGreen: TLabel
+          Left = 205
+          Top = 31
+          Width = 24
+          Height = 12
+          Caption = #32511#33394
+        end
+        object LabelBlue: TLabel
+          Left = 332
+          Top = 31
+          Width = 24
+          Height = 12
+          Caption = #34013#33394
+        end
+        object PanelColor: TPanel
+          Left = 8
+          Top = 24
+          Width = 49
+          Height = 49
+          BevelInner = bvLowered
+          Color = clGray
+          TabOrder = 0
+        end
+        object EditRed: TEdit
+          Left = 105
+          Top = 27
+          Width = 80
+          Height = 20
+          ReadOnly = True
+          TabOrder = 1
+          Text = '128'
+          OnChange = EditRedGreenBlueChange
+        end
+        object EditGreen: TEdit
+          Left = 234
+          Top = 27
+          Width = 80
+          Height = 20
+          ReadOnly = True
+          TabOrder = 2
+          Text = '128'
+          OnChange = EditRedGreenBlueChange
+        end
+        object EditBlue: TEdit
+          Left = 361
+          Top = 27
+          Width = 80
+          Height = 20
+          ReadOnly = True
+          TabOrder = 3
+          Text = '128'
+          OnChange = EditRedGreenBlueChange
+        end
+        object TrackBarRed: TTrackBar
+          Left = 75
+          Top = 49
+          Width = 110
+          Height = 33
+          Max = 255
+          PageSize = 1
+          Position = 128
+          TabOrder = 4
+          TickStyle = tsManual
+          OnChange = TrackBarRedChange
+        end
+        object TrackBarGreen: TTrackBar
+          Left = 205
+          Top = 49
+          Width = 109
+          Height = 33
+          Max = 255
+          PageSize = 1
+          Position = 128
+          TabOrder = 5
+          TickStyle = tsManual
+          OnChange = TrackBarGreenChange
+        end
+        object TrackBarBlue: TTrackBar
+          Left = 332
+          Top = 49
+          Width = 109
+          Height = 33
+          Max = 255
+          PageSize = 1
+          Position = 128
+          TabOrder = 6
+          TickStyle = tsManual
+          OnChange = TrackBarBlueChange
+        end
+      end
+    end
+    object TabSheetBinary: TRzTabSheet
+      Caption = 'Binary2Mif'
+      object lblFileName: TLabel
+        Left = 16
+        Top = 32
+        Width = 36
+        Height = 12
+        Caption = #28304#25991#20214
+      end
+      object lblLen: TLabel
+        Left = 16
+        Top = 72
+        Width = 24
+        Height = 17
+        Caption = #23383#38271
+      end
+      object ButtonLoadFile: TButton
+        Left = 416
+        Top = 24
+        Width = 73
+        Height = 25
+        Caption = #27983#35272
+        TabOrder = 0
+        OnClick = ButtonLoadFileClick
+      end
+      object btnBinToMif: TButton
+        Left = 208
+        Top = 64
+        Width = 129
+        Height = 25
+        Caption = #29983#25104'Mif'#25991#20214
+        TabOrder = 1
+        OnClick = btnBinToMifClick
+      end
+      object EditFile: TEdit
+        Left = 72
+        Top = 29
+        Width = 337
+        Height = 20
+        TabOrder = 2
+      end
+      object seLen: TSpinEdit
+        Left = 72
+        Top = 64
+        Width = 97
+        Height = 21
+        MaxValue = 128
+        MinValue = 1
+        TabOrder = 3
+        Value = 1
+      end
+      object mmoLog: TMemo
+        Left = 72
+        Top = 112
+        Width = 417
+        Height = 137
+        BevelEdges = []
+        BorderStyle = bsNone
+        Color = clScrollBar
+        Lines.Strings = (
+          'mmoLog')
+        ReadOnly = True
+        TabOrder = 4
+        Visible = False
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Filter = 'Bitmap|*.bmp'
+    FilterIndex = 0
+    Options = [ofReadOnly, ofHideReadOnly, ofEnableSizing]
+    Left = 200
+    Top = 8
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '.mif'
+    Filter = 'Mif File|*.mif'
+    Left = 232
+    Top = 8
+  end
+end

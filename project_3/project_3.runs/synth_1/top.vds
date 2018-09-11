@@ -1,0 +1,669 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Sep 11 09:07:17 2018
+# Process ID: 2384
+# Current directory: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/top.vds
+# Journal file: C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20320 
+WARNING: [Synth 8-976] l has already been declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+WARNING: [Synth 8-2654] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+INFO: [Synth 8-994] l is declared here [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 353.922 ; gain = 111.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [Synth 8-638] synthesizing module 'fenpin' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fenpin' (1#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:2]
+INFO: [Synth 8-638] synthesizing module 'key_delay' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:17]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:37]
+WARNING: [Synth 8-5788] Register key_scan_reg in module key_delay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:40]
+INFO: [Synth 8-256] done synthesizing module 'key_delay' (2#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:17]
+INFO: [Synth 8-638] synthesizing module 'boma_delay' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:73]
+INFO: [Synth 8-226] default block is never used [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:94]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:96]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:109]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:155]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:156]
+INFO: [Synth 8-256] done synthesizing module 'boma_delay' (3#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:73]
+INFO: [Synth 8-638] synthesizing module 'sync_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:173]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:186]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:194]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:196]
+INFO: [Synth 8-256] done synthesizing module 'sync_module' (4#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:173]
+INFO: [Synth 8-638] synthesizing module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:315]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:316]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:317]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:318]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:323]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:324]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:325]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:326]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:331]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:332]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:333]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:334]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:339]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:340]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:341]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:342]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:347]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:348]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:349]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:350]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:351]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:353]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:354]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:359]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:360]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:361]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:362]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:363]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:364]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:365]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:371]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:375]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:376]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:377]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:378]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:383]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:384]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:385]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:387]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:388]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:389]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:390]
+INFO: [Synth 8-638] synthesizing module 'pic' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/.Xil/Vivado-2384-LAPTOP-G98IUQ5E/realtime/pic_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pic' (5#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/.Xil/Vivado-2384-LAPTOP-G98IUQ5E/realtime/pic_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'addra' does not match port width (17) of module 'pic' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (3) of module 'pic' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [Synth 8-5788] Register pic_Addr_reg in module vga_control_module is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+INFO: [Synth 8-256] done synthesizing module 'vga_control_module' (6#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+WARNING: [Synth 8-689] width (8) of port connection 'geiwei_tou' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'shiwei_tou' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'shiwei' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'geiwei' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'shiwei_zhaoling' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'geiwei_zhaoling' does not match port width (4) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [Synth 8-689] width (8) of port connection 'num' does not match port width (5) of module 'vga_control_module' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1252]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1261]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1273]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1295]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1304]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1310]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1316]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1332]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1347]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1350]
+WARNING: [Synth 8-6014] Unused sequential element toubi_reg was removed.  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:890]
+WARNING: [Synth 8-6014] Unused sequential element huafei_reg was removed.  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:891]
+WARNING: [Synth 8-6014] Unused sequential element zhaoling_reg was removed.  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:892]
+WARNING: [Synth 8-5788] Register wupin_reg in module main is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:901]
+INFO: [Synth 8-256] done synthesizing module 'main' (7#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+WARNING: [Synth 8-689] width (8) of port connection 'goumai_num' does not match port width (5) of module 'main' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.016 ; gain = 163.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.016 ; gain = 163.242
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/.Xil/Vivado-2384-LAPTOP-G98IUQ5E/dcp1/pic_in_context.xdc] for cell 'U4/pictre_rom_u1'
+Finished Parsing XDC File [C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/.Xil/Vivado-2384-LAPTOP-G98IUQ5E/dcp1/pic_in_context.xdc] for cell 'U4/pictre_rom_u1'
+Parsing XDC File [C:/Users/11918/OneDrive/FPGA/project_3/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/11918/OneDrive/FPGA/project_3/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/11918/OneDrive/FPGA/project_3/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 762.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 762.703 ; gain = 519.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 762.703 ; gain = 519.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U4/pictre_rom_u1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 762.703 ; gain = 519.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "key_scan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_scan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "time_20ms" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Count_V" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+INFO: [Synth 8-5546] ROM "rgb_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num_shuliang" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "geiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "goumai_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "shiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "geiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "goumai_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_temp_reg' [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:432]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 762.703 ; gain = 519.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |vga_control_module__GB0 |           1|     30186|
+|2     |vga_control_module__GB1 |           1|     18308|
+|3     |top__GC0                |           1|     11299|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 4     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 13    
+	   3 Input      9 Bit       Adders := 40    
+	   2 Input      8 Bit       Adders := 47    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    413 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 2     
+	  17 Input     22 Bit        Muxes := 1     
+	  17 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	  17 Input     16 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	  11 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 23    
+	   3 Input     12 Bit        Muxes := 32    
+	  17 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 28    
+	   8 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 4     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 37    
+	  10 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	  17 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_control_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 13    
+	   3 Input      9 Bit       Adders := 40    
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    413 Bit        Muxes := 1     
+	  17 Input     22 Bit        Muxes := 1     
+	  17 Input     21 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 23    
+	   3 Input     12 Bit        Muxes := 32    
+	  17 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module fenpin 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module key_delay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module boma_delay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module sync_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 47    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	  12 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 28    
+	   8 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	  17 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x50).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "geiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiwei_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U1/key_scan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "U2/time_20ms" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "U3/Count_V" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[0]' (LD) to 'U4i_1/rgb_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[1]' (LD) to 'U4i_1/rgb_temp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[2]' (LD) to 'U4i_1/rgb_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[4]' (LD) to 'U4i_1/rgb_temp_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[5]' (LD) to 'U4i_1/rgb_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[6]' (LD) to 'U4i_1/rgb_temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[8]' (LD) to 'U4i_1/rgb_temp_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[9]' (LD) to 'U4i_1/rgb_temp_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_temp_reg[10]' (LD) to 'U4i_1/rgb_temp_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[0]' (FDCE) to 'U4i_1/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[1]' (FDCE) to 'U4i_1/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[2]' (FDCE) to 'U4i_1/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[4]' (FDCE) to 'U4i_1/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[5]' (FDCE) to 'U4i_1/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[6]' (FDCE) to 'U4i_1/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[8]' (FDCE) to 'U4i_1/rgb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[9]' (FDCE) to 'U4i_1/rgb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U4i_1/rgb_reg[10]' (FDCE) to 'U4i_1/rgb_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/U5/\state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[6]' (FDC) to 'i_2/U5/LED_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[7]' (FDC) to 'i_2/U5/LED_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[8]' (FDC) to 'i_2/U5/LED_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[9]' (FDC) to 'i_2/U5/LED_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[10]' (FDC) to 'i_2/U5/LED_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_2/U5/LED_reg[11]' (FDC) to 'i_2/U5/LED_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/U5/\LED_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (state_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shiwei_temp_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shiwei_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shiwei_tou_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shiwei_zhaoling_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (LED_reg[12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (goumai_num_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[15]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[14]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[13]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[12]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[11]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[10]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[9]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[8]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[7]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[6]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[5]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[4]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[3]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[2]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[1]_P) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (wupin_reg[0]_P) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 762.703 ; gain = 519.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_control_module | A*(B:0x50)       | 21     | 7      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top                | PCIN+(A:0x0):B+C | 30     | 11     | 21     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |vga_control_module__GB0 |           1|      3060|
+|2     |vga_control_module__GB1 |           1|      5302|
+|3     |top__GC0                |           1|      2453|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 904.066 ; gain = 661.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 904.828 ; gain = 662.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |vga_control_module__GB0 |           1|      3016|
+|2     |vga_control_module__GB1 |           1|      5302|
+|3     |top__GC0                |           1|      2453|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U5/geiwei_zhaoling_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/geiwei_zhaoling_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/geiwei_zhaoling_reg[5]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pic           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |pic       |     1|
+|2     |BUFG      |     2|
+|3     |CARRY4    |   162|
+|4     |DSP48E1   |     1|
+|5     |DSP48E1_2 |     1|
+|6     |LUT1      |    42|
+|7     |LUT2      |   267|
+|8     |LUT3      |   223|
+|9     |LUT4      |   323|
+|10    |LUT5      |   642|
+|11    |LUT6      |  1569|
+|12    |MUXF7     |   156|
+|13    |MUXF8     |    56|
+|14    |FDCE      |   206|
+|15    |FDRE      |    10|
+|16    |IBUF      |    23|
+|17    |OBUF      |    30|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |  3716|
+|2     |  U0     |fenpin             |     2|
+|3     |  U1     |key_delay          |   104|
+|4     |  U2     |boma_delay         |   228|
+|5     |  U3     |sync_module        |  1681|
+|6     |  U4     |vga_control_module |    47|
+|7     |  U5     |main               |  1574|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 936.492 ; gain = 337.031
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 936.492 ; gain = 693.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 936.492 ; gain = 705.188
+INFO: [Common 17-1381] The checkpoint 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 936.492 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 11 09:09:08 2018...

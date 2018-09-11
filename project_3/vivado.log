@@ -1,0 +1,1337 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Sep 11 09:58:03 2018
+# Process ID: 20088
+# Current directory: C:/Users/11918/OneDrive/FPGA/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11608 C:\Users\11918\OneDrive\FPGA\project_3\project_3.xpr
+# Log file: C:/Users/11918/OneDrive/FPGA/project_3/vivado.log
+# Journal file: C:/Users/11918/OneDrive/FPGA/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11918/OneDrive/FPGA/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 761.957 ; gain = 39.195
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+ERROR: [VRFC 10-46] l is already declared [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1350] second declaration of l ignored [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:392]
+ERROR: [VRFC 10-1040] module vga_control_module ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:222]
+INFO: [VRFC 10-311] analyzing module main
+ERROR: [VRFC 10-1040] module main ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:865]
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1040] module top ignored due to previous errors [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1374]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Sep 11 10:03:42 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 10:03:42 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 819.523 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 832.383 ; gain = 12.859
+set_property -name {xsim.simulate.runtime} -value {1000us} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 858.254 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000us
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000us
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 858.254 ; gain = 0.000
+add_bp {C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v} 66
+remove_bps -file {C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v} -line 66
+set_property -name {xsim.simulate.runtime} -value {100000000000000us} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000000000us
+ERROR: [#UNDEF] Time value -9223372036854775808 is too large
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000000000us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 858.254 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {10000000ns} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {149999850ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 149999850ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:05:48 ; elapsed = 00:03:09 . Memory (MB): peak = 866.527 ; gain = 0.816
+xsim: Time (s): cpu = 00:05:49 ; elapsed = 00:03:10 . Memory (MB): peak = 866.527 ; gain = 0.816
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 149999850ns
+launch_simulation: Time (s): cpu = 00:05:50 ; elapsed = 00:03:14 . Memory (MB): peak = 866.527 ; gain = 0.816
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 149999850ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:05:34 ; elapsed = 00:03:01 . Memory (MB): peak = 867.684 ; gain = 0.000
+xsim: Time (s): cpu = 00:05:35 ; elapsed = 00:03:03 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 149999850ns
+launch_simulation: Time (s): cpu = 00:05:35 ; elapsed = 00:03:08 . Memory (MB): peak = 867.684 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 149999850ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:11:39 ; elapsed = 00:06:18 . Memory (MB): peak = 868.777 ; gain = 1.094
+xsim: Time (s): cpu = 00:11:41 ; elapsed = 00:06:20 . Memory (MB): peak = 868.777 ; gain = 1.094
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 149999850ns
+launch_simulation: Time (s): cpu = 00:11:42 ; elapsed = 00:06:34 . Memory (MB): peak = 868.777 ; gain = 1.094
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 149999850ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 876.750 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 876.750 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 876.750 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {279999930ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 279999930ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:16:23 ; elapsed = 00:36:21 . Memory (MB): peak = 880.352 ; gain = 3.145
+xsim: Time (s): cpu = 00:16:24 ; elapsed = 00:36:22 . Memory (MB): peak = 880.352 ; gain = 3.602
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 279999930ns
+launch_simulation: Time (s): cpu = 00:16:25 ; elapsed = 00:36:26 . Memory (MB): peak = 880.352 ; gain = 3.602
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 884.348 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 884.348 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 886.070 ; gain = 0.387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Vivado 12-5357] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/zong.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_3.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_4.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_5.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_6.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_7.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_8.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_9.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_10.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_11.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_12.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_13.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_14.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_15.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim/pic_16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/ip/pic/sim/pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenpin
+INFO: [VRFC 10-311] analyzing module key_delay
+INFO: [VRFC 10-311] analyzing module boma_delay
+INFO: [VRFC 10-311] analyzing module sync_module
+INFO: [VRFC 10-311] analyzing module vga_control_module
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto feed6e4dadde42e592c81f01a4d4112e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port geiwei_tou [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1430]
+WARNING: [VRFC 10-278] actual bit length 21 differs from formal bit length 17 for port addra [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:422]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 3 for port douta [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:423]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 5 for port goumai_num [C:/Users/11918/OneDrive/FPGA/project_3/project_3.srcs/sources_1/new/vga.v:1440]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenpin
+Compiling module xil_defaultlib.key_delay
+Compiling module xil_defaultlib.boma_delay
+Compiling module xil_defaultlib.sync_module
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.pic
+Compiling module xil_defaultlib.vga_control_module
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/11918/OneDrive/FPGA/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 891.605 ; gain = 0.000
+add_wave {{/testbench/dut/U5/state}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run all
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 895.828 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.U4.pictre_rom_u1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 11 13:30:26 2018...

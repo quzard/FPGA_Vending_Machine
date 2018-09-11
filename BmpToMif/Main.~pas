@@ -1,0 +1,337 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, RzTabs, Lib, ComCtrls, Spin;
+
+type
+  TFormMain = class(TForm)
+    RzPageControl: TRzPageControl;
+    TabSheetBmp: TRzTabSheet;
+    ButtonLoad: TButton;
+    ButtonMake: TButton;
+    OpenDialog: TOpenDialog;
+    SaveDialog: TSaveDialog;
+    ScrollBoxPic: TScrollBox;
+    ImagePic: TImage;
+    TabSheetBinary: TRzTabSheet;
+    ButtonLoadFile: TButton;
+    btnBinToMif: TButton;
+    EditFile: TEdit;
+    GroupBoxType: TGroupBox;
+    RadioButtonTypeBlack: TRadioButton;
+    RadioButtonTypeColor: TRadioButton;
+    GroupBoxBlack: TGroupBox;
+    LabelBlack: TLabel;
+    RadioButtonBlack: TRadioButton;
+    RadioButtonWhite: TRadioButton;
+    GroupBoxColor: TGroupBox;
+    LabelColor: TLabel;
+    RadioButtonColorSingle: TRadioButton;
+    RadioButtonColorMultiple: TRadioButton;
+    GroupBoxBoundary: TGroupBox;
+    PanelColor: TPanel;
+    LabelRed: TLabel;
+    EditRed: TEdit;
+    EditGreen: TEdit;
+    LabelGreen: TLabel;
+    EditBlue: TEdit;
+    LabelBlue: TLabel;
+    TrackBarRed: TTrackBar;
+    TrackBarGreen: TTrackBar;
+    TrackBarBlue: TTrackBar;
+    lblFileName: TLabel;
+    seLen: TSpinEdit;
+    lblLen: TLabel;
+    mmoLog: TMemo;
+    procedure RadioButtonTypeColorClick(Sender: TObject);
+    procedure RadioButtonTypeBlackClick(Sender: TObject);
+    procedure TrackBarBlueChange(Sender: TObject);
+    procedure TrackBarGreenChange(Sender: TObject);
+    procedure TrackBarRedChange(Sender: TObject);
+    procedure EditRedGreenBlueChange(Sender: TObject);
+    procedure btnBinToMifClick(Sender: TObject);
+    procedure ButtonLoadFileClick(Sender: TObject);
+    procedure ButtonMakeClick(Sender: TObject);
+    procedure ButtonLoadClick(Sender: TObject);
+  private
+    { Private declarations }
+
+    PicFile: string;
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMain: TFormMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormMain.ButtonLoadClick(Sender: TObject);
+begin
+  OpenDialog.Filter := 'Bitmap|*.bmp';
+  if OpenDialog.Execute = True then
+    if FileExists(OpenDialog.FileName) then
+    begin
+      PicFile := OpenDialog.FileName;
+      ImagePic.Picture.LoadFromFile(OpenDialog.FileName);
+    end;
+end;
+
+procedure TFormMain.ButtonLoadFileClick(Sender: TObject);
+begin
+  OpenDialog.Filter := 'All Files|*.*';
+  if OpenDialog.Execute = True then
+    if FileExists(OpenDialog.FileName) then
+    begin
+      EditFile.Text := OpenDialog.FileName;
+    end;
+end;
+
+procedure TFormMain.ButtonMakeClick(Sender: TObject);
+var
+  MifFilered: TextFile;
+  MifFilegreen: TextFile;
+  MifFileblue: TextFile;
+  PicSource: TBitmap;
+  PicCanvas: TCanvas;
+  FileName: string;
+
+  blue, green, red: Integer;
+  color: TColor;
+  i: Integer;
+  j: Integer;
+  counter: Integer;
+begin
+  if PicFile = '' then
+  begin
+    Application.MessageBox('请先选择图像文件.', 'Pic2Mif');
+  end else if SaveDialog.Execute = True then
+  begin
+    PicSource := TBitmap.Create();
+    PicSource.LoadFromFile(PicFile);
+
+    PicCanvas := PicSource.Canvas;
+
+    if RadioButtonTypeBlack.Checked = True then
+    begin
+      FileName := SaveDialog.FileName;
+      AssignFile(MifFilered, FileName);
+      Rewrite(MifFilered);
+
+      Writeln(MifFilered, COPYRIGHT);
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'WIDTH=' + '1' + ';');
+      Writeln(MifFilered, 'DEPTH=' + IntToStr(PicSource.Width * PicSource.Height) + ';');
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'ADDRESS_RADIX=UNS;');
+      Writeln(MifFilered, 'DATA_RADIX=BIN;');
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'CONTENT BEGIN');
+
+      counter := 0;
+      if RadioButtonBlack.Checked = True then
+      begin
+        for i := 0 to PicSource.Height - 1 do
+          for j := 0 to PicSource.Width - 1 do
+          begin
+            color := PicCanvas.Pixels[j, i];
+            blue := (color and $00FF0000) shr 16;
+            green := (color and ($0000FF00)) shr 8;
+            red := color and $000000FF;
+
+            if (blue <= TrackBarBlue.Position) and
+              (green <= TrackBarGreen.Position) and
+              (red <= TrackBarRed.Position) then
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '1' + ';')
+            else
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '0' + ';');
+
+            Inc(counter);
+          end;
+      end else if RadioButtonWhite.Checked = True then
+      begin
+        for i := 0 to PicSource.Height - 1 do
+          for j := 0 to PicSource.Width - 1 do
+          begin
+            color := PicCanvas.Pixels[j, i];
+            blue := (color and $00FF0000) shr 16;
+            green := (color and $0000FF00) shr 8;
+            red := color and $000000FF;
+
+            if (blue >= TrackBarBlue.Position) and
+              (green >= TrackBarGreen.Position) and
+              (red >= TrackBarRed.Position) then
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '1' + ';')
+            else
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '0' + ';');
+
+            Inc(counter);
+          end;
+      end;
+
+      Writeln(MifFilered, 'END;');
+      CloseFile(MifFilered);
+    end else if RadioButtonTypeColor.Checked = True then
+    begin
+      FileName :=  SaveDialog.FileName;
+      if RadioButtonColorSingle.Checked = True then
+      begin
+
+      end else begin
+
+      end;
+
+      AssignFile(MifFilered, FileName + '.red.mif');
+      AssignFile(MifFilegreen, FileName + '.green.mif');
+      AssignFile(MifFileblue, FileName + '.blue.mif');
+      Rewrite(MifFilered);
+      Rewrite(MifFilegreen);
+      Rewrite(MifFileblue);
+
+      Writeln(MifFilered, COPYRIGHT);
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'WIDTH=' + '1' + ';');
+      Writeln(MifFilered, 'DEPTH=' + IntToStr(PicSource.Width * PicSource.Height) + ';');
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'ADDRESS_RADIX=UNS;');
+      Writeln(MifFilered, 'DATA_RADIX=BIN;');
+      Writeln(MifFilered, '');
+
+      Writeln(MifFilered, 'CONTENT BEGIN');
+
+      counter := 0;
+      if RadioButtonBlack.Checked = True then
+      begin
+        for i := 0 to PicSource.Height - 1 do
+          for j := 0 to PicSource.Width - 1 do
+          begin
+            color := PicCanvas.Pixels[j, i];
+            blue := color shr 16;
+            green := (color and ($0000FF00)) shr 8;
+            red := color and $000000FF;
+
+            if (blue <= TrackBarBlue.Position) and
+              (green <= TrackBarGreen.Position) and
+              (red <= TrackBarRed.Position) then
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '1' + ';')
+            else
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '0' + ';');
+
+            Inc(counter);
+          end;
+      end else if RadioButtonWhite.Checked = True then
+      begin
+        for i := 0 to PicSource.Height - 1 do
+          for j := 0 to PicSource.Width - 1 do
+          begin
+            color := PicCanvas.Pixels[j, i];
+            blue := color shr 16;
+            green := (color and ($0000FF00)) shr 8;
+            red := color and $000000FF;
+
+            if (blue >= TrackBarBlue.Position) and
+              (green >= TrackBarGreen.Position) and
+              (red >= TrackBarRed.Position) then
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '1' + ';')
+            else
+              Writeln(MifFilered, #09 + IntToStr(counter) + ' : ' + '0' + ';');
+
+            Inc(counter);
+          end;
+      end;
+
+      Writeln(MifFilered, 'END;');
+      CloseFile(MifFilered);
+    end;
+
+    PicSource.Free;
+
+  end;
+end;
+
+procedure TFormMain.btnBinToMifClick(Sender: TObject);
+var
+  Len: Integer;
+begin
+  mmoLog.Visible := False;
+  if (not FileExists(EditFile.Text)) then
+  begin
+    ShowMessage('请确认源文件存在');
+    Exit;
+  end;
+  Len := seLen.Value;
+  if (Len <= 0) then
+  begin
+    ShowMessage('请输入字长');
+    Exit;
+  end;
+  if (SaveDialog.Execute = True) then
+  begin
+      mmoLog.Lines.Clear;
+      mmoLog.Lines.Add('Source    : ' + EditFile.Text);
+      mmoLog.Lines.Add('Dest      : ' + SaveDialog.FileName);
+      SaveBinaryToMif(EditFile.Text, Len, SaveDialog.FileName, mmoLog.Lines);
+      if IOResult <> 0 then
+      begin
+        ShowMessage('读写文件出错');
+      end else begin
+      end;
+      mmoLog.Visible := True;
+  end;
+end;
+
+procedure TFormMain.EditRedGreenBlueChange(Sender: TObject);
+var
+  blue, green, red: Integer;
+begin
+  blue := StrToInt(EditBlue.Text);
+  green := StrToInt(EditGreen.Text);
+  red := StrToInt(EditRed.Text);
+
+  PanelColor.Color := (blue shl 16) or (green shl 8) or red;
+end;
+
+procedure TFormMain.RadioButtonTypeBlackClick(Sender: TObject);
+begin
+  if RadioButtonTypeBlack.Checked = True then
+  begin
+    GroupBoxBlack.Visible := True;
+    GroupBoxColor.Visible := False;
+  end;
+end;
+
+procedure TFormMain.RadioButtonTypeColorClick(Sender: TObject);
+begin
+  if RadioButtonTypeColor.Checked = True then
+  begin
+    GroupBoxBlack.Visible := False;
+    GroupBoxColor.Visible := True;
+  end;
+end;
+
+procedure TFormMain.TrackBarBlueChange(Sender: TObject);
+begin
+  EditBlue.Text := IntToStr(TrackBarBlue.Position);
+end;
+
+procedure TFormMain.TrackBarGreenChange(Sender: TObject);
+begin
+  EditGreen.Text := IntToStr(TrackBarGreen.Position);
+end;
+
+procedure TFormMain.TrackBarRedChange(Sender: TObject);
+begin
+  EditRed.Text := IntToStr(TrackBarRed.Position);
+end;
+
+end.
