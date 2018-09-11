@@ -3,8 +3,8 @@
 
 之后有空补录图像写入IP核的操作步骤，IP核生成时钟的操作步骤和VGA的使用步骤
 
- ![image](https://github.com/Quzard/FPGA/演示图片1.jpg)
- ![image](https://github.com/Quzard/FPGA/演示图片2.jpg)
+ ![image](https://github.com/Quzard/FPGA/raw/master/演示图片1.jpg)
+ ![image](https://github.com/Quzard/FPGA/raw/master/演示图片2.jpg)
 
 
 
