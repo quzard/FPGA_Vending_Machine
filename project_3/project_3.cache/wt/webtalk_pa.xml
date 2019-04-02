@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Sep 11 13:30:22 2018">
+<application name="pa" timeStamp="Tue Apr  2 18:30:07 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="313f0170c4534c3cac27054369c1d02a" type="ProjectID"/>
 <property name="ProjectIteration" value="142" type="ProjectIteration"/>
@@ -47,7 +47,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RunImplementation" value="82" type="JavaHandler"/>
 <property name="RunSynthesis" value="134" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="12" type="JavaHandler"/>
-<property name="ShowView" value="39" type="JavaHandler"/>
+<property name="ShowView" value="40" type="JavaHandler"/>
 <property name="SimulationBreak" value="1" type="JavaHandler"/>
 <property name="SimulationRestart" value="2" type="JavaHandler"/>
 <property name="SimulationRun" value="19" type="JavaHandler"/>
@@ -75,7 +75,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CfgMemPartChooser_WIDTH_CHOOSER" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="17" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="1" type="GuiHandlerData"/>
-<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="17" type="GuiHandlerData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="20" type="GuiHandlerData"/>
 <property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="2" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_CREATE_FILE" value="2" type="GuiHandlerData"/>
@@ -83,7 +83,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="85" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="2" type="GuiHandlerData"/>
 <property name="DefaultOptionPane_CLOSE" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="349" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="385" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="409" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="3" type="GuiHandlerData"/>
@@ -100,10 +100,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN" value="3" type="GuiHandlerData"/>
 <property name="LogPanel_LOG_NAVIGATOR" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_DESIGN_HUBS" value="7" type="GuiHandlerData"/>
-<property name="MainMenuMgr_EDIT" value="22" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EDIT" value="26" type="GuiHandlerData"/>
 <property name="MainMenuMgr_EXPORT" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="22" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FLOW" value="32" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="24" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FLOW" value="36" type="GuiHandlerData"/>
 <property name="MainMenuMgr_HELP" value="16" type="GuiHandlerData"/>
 <property name="MainMenuMgr_IMPORT" value="1" type="GuiHandlerData"/>
 <property name="MainMenuMgr_OPEN" value="2" type="GuiHandlerData"/>
@@ -112,11 +112,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MainMenuMgr_REPORT" value="7" type="GuiHandlerData"/>
 <property name="MainMenuMgr_RUN" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_SETTINGS" value="5" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TOOLS" value="52" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TOOLS" value="57" type="GuiHandlerData"/>
 <property name="MainMenuMgr_UNSELECT_TYPE" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_VIEW" value="13" type="GuiHandlerData"/>
-<property name="MainMenuMgr_WINDOW" value="72" type="GuiHandlerData"/>
-<property name="MainWinMenuMgr_LAYOUT" value="22" type="GuiHandlerData"/>
+<property name="MainMenuMgr_WINDOW" value="78" type="GuiHandlerData"/>
+<property name="MainWinMenuMgr_LAYOUT" value="24" type="GuiHandlerData"/>
 <property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="2" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_SEVERITY" value="1" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="126" type="GuiHandlerData"/>
@@ -151,7 +151,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="19" type="GuiHandlerData"/>
 <property name="PACommandNames_TOGGLE_VIEW_NAV" value="12" type="GuiHandlerData"/>
 <property name="PACommandNames_WRITE_CONFIG_MEMORY_FILE" value="4" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="4" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="5" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="4" type="GuiHandlerData"/>
 <property name="PAViews_IP_CATALOG" value="3" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="2" type="GuiHandlerData"/>
@@ -208,9 +208,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WriteCfgMemFileDialog_SPECIFY_CONFIGURATION_FILENAME" value="3" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="17" type="GuiMode"/>
+<property name="GuiMode" value="41" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="12" type="TclMode"/>
+<property name="TclMode" value="32" type="TclMode"/>
 </item>
 </section>
 </application>

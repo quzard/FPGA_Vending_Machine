@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 17 13:05:52 2019
+# Process ID: 11632
+# Current directory: E:/FPGA-2018-10/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18260 E:\FPGA-2018-10\project_3\project_3.xpr
+# Log file: E:/FPGA-2018-10/project_3/vivado.log
+# Journal file: E:/FPGA-2018-10/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA-2018-10/project_3/project_3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/11918/OneDrive/FPGA/project_3' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_1.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_1.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_2.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_2.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_3.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_3.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_4.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_4.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_5.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_5.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_6.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_6.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_7.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_7.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_8.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_8.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_9.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_9.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_10.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_10.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_11.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_11.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_12.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_12.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_13.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_13.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_14.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_14.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_15.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_15.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../Desktop/coe/pic_16.coe', nor could it be found using path 'C:/Users/11918/Desktop/coe/pic_16.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vidado/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 900.367 ; gain = 158.336
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 17 13:16:15 2019...
